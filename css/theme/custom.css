@@ -1,0 +1,12 @@
+.text-left {
+  text-align: left;
+}
+div.indent {
+  padding-left: 50px
+}
+code.code {
+  background: #FFFFFF;
+  padding: 2px 20px;
+  color: #000000;
+  border-radius: 4px;
+}
