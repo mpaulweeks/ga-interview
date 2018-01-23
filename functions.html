@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/moon.css">
+  <link rel="stylesheet" href="css/theme/custom.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- lesson start -->
+
+      <section class="text-left">
+        <h4>Solution</h4>
+        <pre><code class="code">
+          function shout(toShout){
+            return toShout + '!!!';
+          }
+
+          var cheer = shout('go wildcats');
+          // cheer => 'go wildcats!!!'
+        </code></pre>
+      </section>
+
+      <section class="text-left">
+        <h4>Exercise</h4>
+        <p>
+          Write a function named <span class="hljs-name">shout</span> that takes in a string and
+          returns the same string with three exclamation points (<span class="code-text">'!!!'</span>) added on the end
+        </p>
+        <p>eg:</p>
+        <pre><code class="code">
+          var cheer = shout('go wildcats');
+          // cheer => 'go wildcats!!!'
+        </code></pre>
+      </section>
+
+      <section class="text-left">
+        <h4>Example #2</h4>
+        <pre><code class="code">
+          function triple(numToTriple){
+            return 3 * numToTriple;
+          }
+
+          var bar = triple(4);
+          // bar => 12
+        </code></pre>
+        <ul>
+          <li>
+            now we return the given arg multiplied by <span class="code-text">3</span>
+            <ul>
+              <li>
+                we call the function with the number <span class="code-text">4</span>
+              </li>
+              <li>
+                the result of the function is assigned to <span class="code-text">bar</span>
+              </li>
+              <li>
+                so <span class="code-text">bar = 12</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h4>Example #2</h4>
+        <pre><code class="code">
+          function triple(numToTriple){
+            return 3 * numToTriple;
+          }
+
+          var bar = triple(4);
+          // bar => 12
+        </code></pre>
+        <ul>
+          <li>
+            this function takes an argument, called <span class="code-text">numToTriple</span>
+            <ul>
+              <li>
+                the name is abritrary, just like variables
+              </li>
+              <li>
+                you can think of <span class="code-text">numToTriple</span> as a variable that's only accessible within the function
+              </li>
+              <li>
+                this "sandboxing" is known as the "function scope"
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="text-left">
+        <h4>Example #1</h4>
+        <pre><code class="code">
+          function three(){
+            return 3;
+          }
+
+          var foo = three();
+          // foo => 3
+        </code></pre>
+        <ul>
+          <li>
+            you call the function by also using parens
+            <ul>
+              <li>
+                eg: <span class="code-text">var foo = three();</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="hljs-keyword">return</span> describes the value of the function
+            <ul>
+              <li>
+                this function returns <span class="code-text">3</span>
+              </li>
+              <li>
+                the result of the function is assigned to <span class="code-text">foo</span>
+              </li>
+              <li>
+                so <span class="code-text">foo = 3</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h4>Example #1</h4>
+        <pre><code class="code">
+          function three(){
+            return 3;
+          }
+
+          var foo = three();
+          // foo => 3
+        </code></pre>
+        <ul>
+          <li>
+            <span class="hljs-keyword">function</span> and <span class="hljs-keyword">return</span> are keywords
+          </li>
+          <li>
+            <span class="hljs-keyword">function</span> describes what we're declaring
+            <ul>
+              <li>
+                much like <span class="hljs-keyword">var</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="hljs-name">three</span> is the name of our function
+            <ul>
+              <li>
+                in the same way that <span class="code-text">foo</span> is the name of a variable
+              </li>
+            </ul>
+          </li>
+          <li>
+            function names are always followed by parenthesis <span class="code-text">()</span>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <section class="text-left">
+        <h1>Functions</h1>
+        <div>
+          <ul>
+            <li>Reusable</li>
+            <li>Sandboxing</li>
+            <li>Customizable</li>
+          </ul>
+          <p>You can view the source of this slideshow
+            <a href="https://github.com/mpaulweeks/ga-sample">on Github</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- lesson end -->
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+</html>

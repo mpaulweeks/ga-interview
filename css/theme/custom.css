@@ -6,8 +6,8 @@ div.indent {
 }
 code.code {
   cursor: url(../../img/circle.png) 50 50, auto;
-  background: #FFFFFF;
-  padding: 2px 20px;
-  color: #000000;
   border-radius: 4px;
+}
+.code-text {
+  color: #dcdcdc;
 }
