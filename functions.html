@@ -30,7 +30,41 @@
       <section class="text-left">
         <h4>Solution</h4>
         <pre><code class="code">
-          function shout(toShout){
+          function divide(a, b) {
+            if (b === 0) {
+              return 'error';
+            }
+            return a / b;
+          }
+
+          var dividend = divide(3, 6);
+          // dividend => 0.5
+
+          var dividend = divide(5, 0);
+          // dividend => 'error'
+        </code></pre>
+      </section>
+
+      <section class="text-left">
+        <h4>Exercise</h4>
+        <p>
+          Write a function that takes two numbers, and divides the first one by the second.
+          If the second argument is zero, you should return the string 'error'.
+        </p>
+        <p>eg:</p>
+        <pre><code class="code">
+          var dividend = divide(3, 6);
+          // dividend => 0.5
+
+          var dividend = divide(5, 0);
+          // dividend => 'error'
+        </code></pre>
+      </section>
+
+      <section class="text-left">
+        <h4>Solution</h4>
+        <pre><code class="code">
+          function shout(toShout) {
             return toShout + '!!!';
           }
 
@@ -52,10 +86,54 @@
         </code></pre>
       </section>
 
+
+      <section class="text-left">
+        <h4>Example #4</h4>
+        <pre><code class="code">
+          function combineBackwards(first, second) {
+            return second + first;
+          }
+
+          var word = combineBackwards('one', 'two');
+          // word = 'twoone'
+        </code></pre>
+        <ul>
+          <li>
+            the order of the arguments is preserved
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="text-left">
+        <h4>Example #3</h4>
+        <pre><code class="code">
+          function multiply(a, b) {
+            return a * b;
+          }
+
+          var sum = multiply(5, 7);
+          // sum = 35
+        </code></pre>
+        <ul>
+          <li>
+            functions can take multiple arguments
+          </li>
+          <li>
+            seperate each argument by a comma
+          </li>
+          <ul>
+            <li>
+              it's same for both function declaration and invocation
+            </li>
+          </ul>
+        </ul>
+      </section>
+
       <section class="text-left">
         <h4>Example #2</h4>
         <pre><code class="code">
-          function triple(numToTriple){
+          function triple(numToTriple) {
             return 3 * numToTriple;
           }
 
@@ -79,11 +157,10 @@
           </li>
         </ul>
       </section>
-
       <section class="text-left">
         <h4>Example #2</h4>
         <pre><code class="code">
-          function triple(numToTriple){
+          function triple(numToTriple) {
             return 3 * numToTriple;
           }
 
@@ -108,11 +185,10 @@
         </ul>
       </section>
 
-
       <section class="text-left">
         <h4>Example #1</h4>
         <pre><code class="code">
-          function three(){
+          function three() {
             return 3;
           }
 
@@ -148,7 +224,7 @@
       <section class="text-left">
         <h4>Example #1</h4>
         <pre><code class="code">
-          function three(){
+          function three() {
             return 3;
           }
 
