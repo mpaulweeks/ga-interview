@@ -6,19 +6,19 @@
 
   <title>reveal.js</title>
 
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/moon.css">
-  <link rel="stylesheet" href="css/theme/custom.css">
+  <link rel="stylesheet" href="../css/reveal.css">
+  <link rel="stylesheet" href="../css/theme/moon.css">
+  <link rel="stylesheet" href="../css/theme/custom.css">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="../lib/css/zenburn.css">
 
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    link.href = '../css/print/' + (window.location.search.match( /print-pdf/gi ) ? 'pdf.css' : 'paper.css');
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
 </head>
@@ -212,7 +212,7 @@
       </section>
 
       <section class="text-left">
-        <h4>Exercise</h4>
+        <h4>Exercise #1</h4>
         <p>
           Write a function named <span class="hljs-name">shout</span> that takes in a string and
           returns the same string with three exclamation points (<span class="code-text">'!!!'</span>) added on the end
@@ -223,20 +223,9 @@
           // cheer => 'go wildcats!!!'
         </code></pre>
       </section>
-      <section class="text-left">
-        <h4>Solution</h4>
-        <pre><code class="code">
-          function shout(toShout) {
-            return toShout + '!!!';
-          }
-
-          var cheer = shout('go wildcats');
-          // cheer => 'go wildcats!!!'
-        </code></pre>
-      </section>
 
       <section class="text-left">
-        <h4>Exercise</h4>
+        <h4>Exercise #2</h4>
         <p>
           Write a function that takes two numbers, and divides the first one by the second.
           If the second argument is zero, you should return the string 'error'.
@@ -250,30 +239,12 @@
           // dividend => 'error'
         </code></pre>
       </section>
-      <section class="text-left">
-        <h4>Solution</h4>
-        <pre><code class="code">
-          function divide(a, b) {
-            if (b === 0) {
-              return 'error';
-            }
-            return a / b;
-          }
-
-          var dividend = divide(3, 6);
-          // dividend => 0.5
-
-          var dividend = divide(5, 0);
-          // dividend => 'error'
-        </code></pre>
-      </section>
-
       <!-- lesson end -->
     </div>
   </div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="../lib/js/head.min.js"></script>
+  <script src="../js/reveal.js"></script>
 
   <script>
     // More info about config & dependencies:
@@ -281,10 +252,10 @@
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
       dependencies: [
-        { src: 'plugin/markdown/marked.js' },
-        { src: 'plugin/markdown/markdown.js' },
-        { src: 'plugin/notes/notes.js', async: true },
-        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        { src: '../plugin/markdown/marked.js' },
+        { src: '../plugin/markdown/markdown.js' },
+        { src: '../plugin/notes/notes.js', async: true },
+        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
       ]
     });
   </script>
