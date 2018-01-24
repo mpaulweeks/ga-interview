@@ -1,4 +1,4 @@
-# ga-sample
+# ga-interview
 
 First attempt at making a slideshow with Reveal.js
 
