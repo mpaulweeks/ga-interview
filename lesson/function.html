@@ -31,8 +31,8 @@
         <h1>Functions</h1>
         <div>
           <ul>
-            <li>Reusable</li>
-            <li>Sandboxing</li>
+            <li>Reusable Logic</li>
+            <li>Isolated Scope</li>
             <li>Customizable</li>
           </ul>
           <p>
@@ -46,8 +46,6 @@
           </p>
         </div>
       </section>
-
-
 
       <section class="text-left">
         <h4>Example #1</h4>
@@ -127,8 +125,10 @@
             return 3 * numToTriple;
           }
 
-          var bar = triple(4);
-          // bar => 12
+          var tripFour = triple(4);
+          // tripFour => 12
+          var tripHalf = triple(0.5);
+          // tripHalf => 1.5
         </code></pre>
         <ul>
           <li>
@@ -154,8 +154,10 @@
             return 3 * numToTriple;
           }
 
-          var bar = triple(4);
-          // bar => 12
+          var tripFour = triple(4);
+          // tripFour => 12
+          var tripHalf = triple(0.5);
+          // tripHalf => 1.5
         </code></pre>
         <ul>
           <li>
@@ -165,12 +167,15 @@
                 we call the function with the number <span class="code-text">4</span>
               </li>
               <li>
-                the result of the function is assigned to <span class="code-text">bar</span>
+                the result of the function is assigned to <span class="code-text">tripFour</span>
               </li>
               <li>
-                so <span class="code-text">bar = 12</span>
+                so <span class="code-text">tripFour = 12</span>
               </li>
             </ul>
+          </li>
+          <li>
+            you can call the function with different values
           </li>
         </ul>
       </section>
