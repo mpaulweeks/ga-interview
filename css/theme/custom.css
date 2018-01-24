@@ -5,7 +5,7 @@ div.indent {
   padding-left: 50px
 }
 code.code {
-  cursor: url(../../img/circle.png) 50 50, auto;
+  cursor: url(../../img/circle.png) 16 16, auto;
   border-radius: 4px;
 }
 .code-text {
