@@ -179,6 +179,40 @@
           </li>
         </ul>
       </section>
+      <section class="text-left">
+        <h4>Example #2.5</h4>
+        <pre><code class="code">
+          function triple(numToTriple) {
+            return 3 * numToTriple;
+          }
+
+          var tripFour = triple(4);
+          // tripFour => 12
+          var tripTwelve = triple(tripFour);
+          // tripTwelve => 36
+
+          var tripFourTwice = triple(triple(4));
+          // tripFourTwice => 36
+        </code></pre>
+        <ul>
+          <li>
+            you can nest function calls
+            <ul>
+              <li>
+                remember, the function is just returning a value
+              </li>
+            </ul>
+          </li>
+          <li>
+            here we call <span class="hljs-name">triple</span> on the number 4 twice
+            <ul>
+              <li>
+                with a helper variable vs nesting function calls
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
       <section class="text-left">
         <h4>Example #3</h4>
