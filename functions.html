@@ -28,163 +28,56 @@
       <!-- lesson start -->
 
       <section class="text-left">
-        <h4>Solution</h4>
-        <pre><code class="code">
-          function divide(a, b) {
-            if (b === 0) {
-              return 'error';
-            }
-            return a / b;
-          }
-
-          var dividend = divide(3, 6);
-          // dividend => 0.5
-
-          var dividend = divide(5, 0);
-          // dividend => 'error'
-        </code></pre>
-      </section>
-
-      <section class="text-left">
-        <h4>Exercise</h4>
-        <p>
-          Write a function that takes two numbers, and divides the first one by the second.
-          If the second argument is zero, you should return the string 'error'.
-        </p>
-        <p>eg:</p>
-        <pre><code class="code">
-          var dividend = divide(3, 6);
-          // dividend => 0.5
-
-          var dividend = divide(5, 0);
-          // dividend => 'error'
-        </code></pre>
-      </section>
-
-      <section class="text-left">
-        <h4>Solution</h4>
-        <pre><code class="code">
-          function shout(toShout) {
-            return toShout + '!!!';
-          }
-
-          var cheer = shout('go wildcats');
-          // cheer => 'go wildcats!!!'
-        </code></pre>
-      </section>
-
-      <section class="text-left">
-        <h4>Exercise</h4>
-        <p>
-          Write a function named <span class="hljs-name">shout</span> that takes in a string and
-          returns the same string with three exclamation points (<span class="code-text">'!!!'</span>) added on the end
-        </p>
-        <p>eg:</p>
-        <pre><code class="code">
-          var cheer = shout('go wildcats');
-          // cheer => 'go wildcats!!!'
-        </code></pre>
-      </section>
-
-
-      <section class="text-left">
-        <h4>Example #4</h4>
-        <pre><code class="code">
-          function combineBackwards(first, second) {
-            return second + first;
-          }
-
-          var word = combineBackwards('one', 'two');
-          // word = 'twoone'
-        </code></pre>
-        <ul>
-          <li>
-            the order of the arguments is preserved
-          </li>
-        </ul>
-      </section>
-
-
-      <section class="text-left">
-        <h4>Example #3</h4>
-        <pre><code class="code">
-          function multiply(a, b) {
-            return a * b;
-          }
-
-          var sum = multiply(5, 7);
-          // sum = 35
-        </code></pre>
-        <ul>
-          <li>
-            functions can take multiple arguments
-          </li>
-          <li>
-            seperate each argument by a comma
-          </li>
+        <h1>Functions</h1>
+        <div>
           <ul>
-            <li>
-              it's same for both function declaration and invocation
-            </li>
+            <li>Reusable</li>
+            <li>Sandboxing</li>
+            <li>Customizable</li>
           </ul>
-        </ul>
+          <p>You can view the source of this slideshow
+            <a href="https://github.com/mpaulweeks/ga-sample">on Github</a>
+          </p>
+        </div>
       </section>
 
+
+
       <section class="text-left">
-        <h4>Example #2</h4>
+        <h4>Example #1</h4>
         <pre><code class="code">
-          function triple(numToTriple) {
-            return 3 * numToTriple;
+          function three() {
+            return 3;
           }
 
-          var bar = triple(4);
-          // bar => 12
+          var foo = three();
+          // foo => 3
         </code></pre>
         <ul>
           <li>
-            now we return the given arg multiplied by <span class="code-text">3</span>
-            <ul>
-              <li>
-                we call the function with the number <span class="code-text">4</span>
-              </li>
-              <li>
-                the result of the function is assigned to <span class="code-text">bar</span>
-              </li>
-              <li>
-                so <span class="code-text">bar = 12</span>
-              </li>
-            </ul>
+            <span class="hljs-keyword">function</span> and <span class="hljs-keyword">return</span> are keywords
           </li>
-        </ul>
-      </section>
-      <section class="text-left">
-        <h4>Example #2</h4>
-        <pre><code class="code">
-          function triple(numToTriple) {
-            return 3 * numToTriple;
-          }
-
-          var bar = triple(4);
-          // bar => 12
-        </code></pre>
-        <ul>
           <li>
-            this function takes an argument, called <span class="code-text">numToTriple</span>
+            <span class="hljs-keyword">function</span> describes what we're declaring
             <ul>
               <li>
-                the name is abritrary, just like variables
-              </li>
-              <li>
-                you can think of <span class="code-text">numToTriple</span> as a variable that's only accessible within the function
-              </li>
-              <li>
-                this "sandboxing" is known as the "function scope"
+                much like <span class="hljs-keyword">var</span>
               </li>
             </ul>
           </li>
+          <li>
+            <span class="hljs-name">three</span> is the name of our function
+            <ul>
+              <li>
+                in the same way that <span class="code-text">foo</span> is the name of a variable
+              </li>
+            </ul>
+          </li>
+          <li>
+            function names are always followed by parenthesis <span class="code-text">()</span>
+          </li>
         </ul>
       </section>
-
       <section class="text-left">
         <h4>Example #1</h4>
         <pre><code class="code">
@@ -222,55 +115,157 @@
       </section>
 
       <section class="text-left">
-        <h4>Example #1</h4>
+        <h4>Example #2</h4>
         <pre><code class="code">
-          function three() {
-            return 3;
+          function triple(numToTriple) {
+            return 3 * numToTriple;
           }
 
-          var foo = three();
-          // foo => 3
+          var bar = triple(4);
+          // bar => 12
         </code></pre>
         <ul>
           <li>
-            <span class="hljs-keyword">function</span> and <span class="hljs-keyword">return</span> are keywords
-          </li>
-          <li>
-            <span class="hljs-keyword">function</span> describes what we're declaring
+            this function takes an argument, called <span class="code-text">numToTriple</span>
             <ul>
               <li>
-                much like <span class="hljs-keyword">var</span>
+                the name is abritrary, just like variables
+              </li>
+              <li>
+                you can think of <span class="code-text">numToTriple</span> as a variable that's only accessible within the function
+              </li>
+              <li>
+                this "sandboxing" is known as the "function scope"
               </li>
             </ul>
           </li>
+        </ul>
+      </section>
+      <section class="text-left">
+        <h4>Example #2</h4>
+        <pre><code class="code">
+          function triple(numToTriple) {
+            return 3 * numToTriple;
+          }
+
+          var bar = triple(4);
+          // bar => 12
+        </code></pre>
+        <ul>
           <li>
-            <span class="hljs-name">three</span> is the name of our function
+            now we return the given arg multiplied by <span class="code-text">3</span>
             <ul>
               <li>
-                in the same way that <span class="code-text">foo</span> is the name of a variable
+                we call the function with the number <span class="code-text">4</span>
+              </li>
+              <li>
+                the result of the function is assigned to <span class="code-text">bar</span>
+              </li>
+              <li>
+                so <span class="code-text">bar = 12</span>
               </li>
             </ul>
-          </li>
-          <li>
-            function names are always followed by parenthesis <span class="code-text">()</span>
           </li>
         </ul>
       </section>
 
+      <section class="text-left">
+        <h4>Example #3</h4>
+        <pre><code class="code">
+          function multiply(a, b) {
+            return a * b;
+          }
 
+          var sum = multiply(5, 7);
+          // sum = 35
+        </code></pre>
+        <ul>
+          <li>
+            functions can take multiple arguments
+          </li>
+          <li>
+            seperate each argument by a comma
+          </li>
+          <ul>
+            <li>
+              it's same for both function declaration and invocation
+            </li>
+          </ul>
+        </ul>
+      </section>
 
       <section class="text-left">
-        <h1>Functions</h1>
-        <div>
-          <ul>
-            <li>Reusable</li>
-            <li>Sandboxing</li>
-            <li>Customizable</li>
-          </ul>
-          <p>You can view the source of this slideshow
-            <a href="https://github.com/mpaulweeks/ga-sample">on Github</a>
-          </p>
-        </div>
+        <h4>Example #4</h4>
+        <pre><code class="code">
+          function combineBackwards(first, second) {
+            return second + first;
+          }
+
+          var word = combineBackwards('one', 'two');
+          // word = 'twoone'
+        </code></pre>
+        <ul>
+          <li>
+            the order of the arguments is preserved
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h4>Exercise</h4>
+        <p>
+          Write a function named <span class="hljs-name">shout</span> that takes in a string and
+          returns the same string with three exclamation points (<span class="code-text">'!!!'</span>) added on the end
+        </p>
+        <p>eg:</p>
+        <pre><code class="code">
+          var cheer = shout('go wildcats');
+          // cheer => 'go wildcats!!!'
+        </code></pre>
+      </section>
+      <section class="text-left">
+        <h4>Solution</h4>
+        <pre><code class="code">
+          function shout(toShout) {
+            return toShout + '!!!';
+          }
+
+          var cheer = shout('go wildcats');
+          // cheer => 'go wildcats!!!'
+        </code></pre>
+      </section>
+
+      <section class="text-left">
+        <h4>Exercise</h4>
+        <p>
+          Write a function that takes two numbers, and divides the first one by the second.
+          If the second argument is zero, you should return the string 'error'.
+        </p>
+        <p>eg:</p>
+        <pre><code class="code">
+          var dividend = divide(3, 6);
+          // dividend => 0.5
+
+          var dividend = divide(5, 0);
+          // dividend => 'error'
+        </code></pre>
+      </section>
+      <section class="text-left">
+        <h4>Solution</h4>
+        <pre><code class="code">
+          function divide(a, b) {
+            if (b === 0) {
+              return 'error';
+            }
+            return a / b;
+          }
+
+          var dividend = divide(3, 6);
+          // dividend => 0.5
+
+          var dividend = divide(5, 0);
+          // dividend => 'error'
+        </code></pre>
       </section>
 
       <!-- lesson end -->
